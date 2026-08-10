@@ -18,23 +18,23 @@ const posts = (await getCollection('blog'))
 		<Header />
 		<main>
 			<section class="hero">
-				<h1>Hola, soy Cesar Gordillo</h1>
-				<p class="tagline">Acuarelista y profesor de talleres de pintura</p>
+				<h1>Hello, I'm Cesar Gordillo</h1>
+				<p class="tagline">Watercolor artist &amp; workshop teacher</p>
 				<p>
-					Pinto en acuarela desde hace años, explorando el color, la luz y la
-					espontaneidad del agua sobre el papel. A través de mis talleres,
-					comparto esta técnica con quienes quieren perder el miedo al pincel
-					y descubrir su propia voz creativa &mdash; sin importar su nivel de
-					experiencia.
+					I've been painting in watercolor for years, exploring color, light,
+					and the spontaneity of water on paper. Through my workshops, I share
+					this technique with anyone looking to lose their fear of the brush
+					and discover their own creative voice &mdash; no matter their
+					experience level.
 				</p>
 				<p>
-					Aquí encontrarás una muestra de mi trabajo reciente, próximos talleres
-					y algunas reflexiones sobre el proceso de pintar con acuarela.
+					Here you'll find a selection of my recent work, upcoming workshops,
+					and a few reflections on the process of painting with watercolor.
 				</p>
 			</section>
 
 			<section class="featured">
-				<h2>Trabajos destacados</h2>
+				<h2>Featured Work</h2>
 				{posts.length > 0 ? (
 					<ul class="project-list">
 						{posts.map((post) => (
@@ -50,9 +50,9 @@ const posts = (await getCollection('blog'))
 						))}
 					</ul>
 				) : (
-					<p>Pronto encontrarás aquí mis piezas y proyectos más recientes.</p>
+					<p>My latest pieces and projects will appear here soon.</p>
 				)}
-				<a href="/blog" class="see-all">Ver todo el trabajo &rarr;</a>
+				<a href="/blog" class="see-all">See all work &rarr;</a>
 			</section>
 		</main>
 		<Footer />
